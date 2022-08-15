@@ -2,10 +2,22 @@
   --primary: #fff;
   --background: rgba(91, 192, 190, 0.595);
 }
-a:link { text-decoration:  none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
 
 hr {
   align-self: left;
@@ -14,30 +26,34 @@ hr {
 
 .experiences {
   padding: 0rem;
-  background: rgba(35, 35, 35, 0.95);;
+  background: rgba(35, 35, 35, 0.95);
+  ;
   color: var(--primary)
 }
 
-.experiences > h1 {
+.experiences>h1 {
   margin-top: 0rem;
   min-width: 100%;
   margin-bottom: 5rem;
   text-align: center;
   font-weight: normal;
   color: rgb(251, 255, 252);
-  background: linear-gradient(0deg, rgba(34, 44, 79, 0.782) , rgba(48, 62, 103, 0.946) 100%);
-  
+  background: linear-gradient(0deg, rgba(17, 26, 53, 0.782), rgba(21, 30, 55, 0.946) 100%);
+  /* background: darkslategray; */
+
   padding: 5rem;
   font-size: 70px;
   text-align: center;
-  
+
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.558);
   -webkit-filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.604));
   filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.495));
 }
-.experiences > p {
+
+.experiences>p {
   font-size: 30px;
 }
+
 .experiences__container {
   display: flex;
   flex-flow: column wrap;
@@ -48,7 +64,7 @@ hr {
 }
 
 .experiences__wrapper {
-  position: relative; 
+  position: relative;
   width: 100%;
 }
 
@@ -56,7 +72,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
 
   padding: 1rem;
   flex-wrap: wrap;
@@ -70,7 +86,7 @@ hr {
   display: flex;
   flex-flow: column;
   flex: 0;
-  margin:  2.5rem;
+  margin: 2.5rem;
   border-radius: 10px;
 }
 
@@ -78,13 +94,14 @@ hr {
   display: flex;
   flex-flow: row;
   background: rgba(36, 48, 85, 0);
-  max-width: 1000px; 
+  max-width: 1000px;
   width: 100%;
   height: 100%;
   overflow: hidden;
   text-decoration: none;
 }
-.experiences__item__link > a {
+
+.experiences__item__link>a {
   align-self: start;
 }
 
@@ -115,13 +132,13 @@ hr {
 .experiences__item__info {
   line-height: 24px;
   padding: 20px 20px 20px;
-  display: block; 
+  display: block;
   min-width: 40%;
-  
+
   margin: auto;
 }
 
-.experiences__item__name   {
+.experiences__item__name {
   color: #ffffff;
   font-size: 23px;
   line-height: 24px;
@@ -130,7 +147,7 @@ hr {
   margin-right: auto;
   display: block;
   font-weight: bold;
-  font-family:  'Verdana';
+  font-family: 'Verdana';
 }
 
 .experiences__item__desc {
@@ -148,7 +165,7 @@ hr {
 }
 
 @media only screen and (max-width: 1024px) {
-  .experiences > h1 {
+  .experiences>h1 {
     font-size: 30px;
     padding: 3.6rem;
     margin-bottom: 2rem;
@@ -158,29 +175,35 @@ hr {
     align-items: left;
     padding: 0rem;
   }
+
   .experiences__item__link {
     min-width: 100%;
     max-width: 100%;
   }
+
   .experiences__item {
     margin-bottom: 2rem;
     max-width: 100%;
     min-width: 70%;
     padding: 0px;
   }
+
   .experiences__item__img {
     width: 70px;
-    height:70px;
-    margin-left:0;
+    height: 70px;
+    margin-left: 0;
   }
+
   .experiences__item__info {
     font-size: 15px;
     width: 100%;
     padding: 5px;
   }
+
   .experiences__item__name {
     font-size: 15px;
   }
+
   .experiences__item__desc {
     font-size: 13px;
   }
