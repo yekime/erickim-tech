@@ -27,7 +27,7 @@ function Cards(props) {
         <div className="projects__container">
           <div className="projects__wrapper">
             <ul className="projects__items">
-              {projectList.flatMap((projectInfo) => {
+              {projectList.sort((a, b) => (a.priority < b.priority) ? -1 : 0).flatMap((projectInfo) => {
                 return projectInfo.show ? (
                   <li className="projects__item">
                     <div className="projects__item__link">
@@ -53,16 +53,16 @@ function Cards(props) {
                               href={projectInfo.demo}
                               target=""
                             >
-                              <i class="fa fa-play"></i> Demo
+                              <i className="fa fa-play"></i> Demo
                             </a>
                           )}
-                          {projectInfo.name === "My Website" && (
+                          {projectInfo.name === "This Website" && (
                             <Link
                               className="demo-tab"
                               to=""
                               onClick={onFakeDemoClick}
                             >
-                              <i class="fa fa-play"></i> {fakeDemoLabel}
+                              <i className="fa fa-play"></i> {fakeDemoLabel}
                             </Link>
                           )}
                           {projectInfo.link && (
@@ -71,7 +71,7 @@ function Cards(props) {
                               href={projectInfo.link}
                               target="_blank"
                             >
-                              <i class="fa fa-external-link-alt"></i> Link
+                              <i className="fa fa-external-link-alt"></i> Link
                             </a>
                           )}
                         </div>

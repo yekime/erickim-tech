@@ -7,10 +7,19 @@ from backend.models import ProjectInfo
 class ProjectInfoSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProjectInfo
-        fields = ["name", "description", "link", "github", "demo", "image", "show"]
+        fields = [
+            "name",
+            "description",
+            "link",
+            "github",
+            "demo",
+            "image",
+            "show",
+            "priority",
+        ]
 
 
 class ExperienceSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProjectInfo
-        fields = ["name", "description", "link", "image", "show"]
+        fields = ["name", "description", "link", "image", "show", "priority"]
